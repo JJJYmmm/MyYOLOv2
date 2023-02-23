@@ -161,15 +161,15 @@ $$
 
 ​	代码主要框架与myYOLOv1一致。主要修改了**模型文件yolov2.py/骨干网络backbone/正样本制作方法matcher.py/损失函数loss.py**
 
-<img src="C:\Users\Axuanz\AppData\Roaming\Typora\typora-user-images\image-20230220141637708.png" alt="image-20230220141637708" style="zoom:67%;" />
+![image](https://user-images.githubusercontent.com/92386084/220891099-6b75ab15-7904-4f1f-841f-9e2a796fb1a6.png)
 
 ### 测试
 
 ​	测试效果如下。
 
-<img src="C:\Users\Axuanz\AppData\Roaming\Typora\typora-user-images\image-20230220192326558.png" alt="image-20230220192326558" style="zoom:50%;" />
+![image](https://user-images.githubusercontent.com/92386084/220891123-befe9080-0805-4f46-99e3-5db8d697bc6f.png)
 
-<img src="C:\Users\Axuanz\AppData\Roaming\Typora\typora-user-images\image-20230220192501048.png" alt="image-20230220192501048" style="zoom: 67%;" />
+![image](https://user-images.githubusercontent.com/92386084/220891140-6fdc5025-fc37-40e7-b4c2-8c89a0b8158c.png)
 
 > python eval.py --cuda -d voc --weight ./weights/yolov2_voc.pth --save
 
@@ -177,6 +177,6 @@ $$
 
 ​	yolov2+在**voc2007测试集**上的**mAP达到了0.785**
 
-![image-20230220191113884](C:\Users\Axuanz\AppData\Roaming\Typora\typora-user-images\image-20230220191113884.png)
+![image](https://user-images.githubusercontent.com/92386084/220891162-49c8737e-fa68-4733-a4c9-2889ac73a9d2.png)
 
 > python eval.py --cuda -d voc --weight ./weights/yolov2_voc.pth -size 608
